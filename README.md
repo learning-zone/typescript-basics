@@ -262,12 +262,12 @@ someService['someMethod'](x);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Why do you need type definitions?
-## Q. How would you define a custom type?
-## Q. What is the difference between an Interface and a Class?
-## Q. What are Discriminated union types?
-## Q. How do you define Object of Objects type in typescript?
-## Q. How can you capture the 'type' the user provides (e.g. number), so that we can use that information later.
+#### Q. Why do you need type definitions?
+#### Q. How would you define a custom type?
+#### Q. What is the difference between an Interface and a Class?
+#### Q. What are Discriminated union types?
+#### Q. How do you define Object of Objects type in typescript?
+#### Q. How can you capture the 'type' the user provides (e.g. number), so that we can use that information later.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
