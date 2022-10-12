@@ -78,18 +78,21 @@ Generics offer a way to create reusable components. Generics provide a way to ma
 **Example:**
 
 ```ts
+/**
+ * Generics
+ */
 function getArray<T>(items : T[] ) : T[] {
     return new Array<T>().concat(items);
 }
 
-let myNumArr = getArray<number>([100, 200, 300]);
-let myStrArr = getArray<string>(["Hello", "World"]);
+let numArr = getArray<number>([10, 20, 30]);
+let strArr = getArray<string>(["Hello", "World"]);
 
-myNumArr.push(400); // OK
-myStrArr.push("Hello TypeScript"); // OK
+numArr.push(40); // OK
+strArr.push("Hello TypeScript"); // OK
 
-myNumArr.push("Hi"); // Compiler Error
-myStrArr.push(500); // Compiler Error
+numArr.push("Hi"); // Compiler Error
+strArr.push(50); // Compiler Error
 ```
 
 <div align="right">
