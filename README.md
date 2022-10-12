@@ -175,11 +175,16 @@ Yes, the code is valid. A class declaration creates two things: a type represent
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Explain how and why we could use property decorators in TS?
+## Q. Explain decorators in TS?
 
-Decorators can be used to modify the behavior of a class or become even more powerful when integrated into a framework. For instance, if your framework has methods with restricted access requirements (just for admin), it would be easy to write an @admin method decorator to deny access to non-administrative users, or an @owner decorator to only allow the owner of an object the ability to modify it.
+Decorators can be used to modify the behavior of a class or become even more powerful when integrated into a framework. For instance, if your framework has methods with restricted access requirements (just for admin), it would be easy to write an `@admin` method decorator to deny access to non-administrative users, or an `@owner` decorator to only allow the owner of an object the ability to modify it.
+
+**Example:**
 
 ```ts
+/**
+ * Decorators
+ */
 class Employee {
     get() { }
     post() { }
@@ -196,9 +201,21 @@ class Employee {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is the difference between "interface vs type" statements?
+## Q. What is the difference between interface and type statements?
+
+|Interface |Type |
+|----------|-------|
+|An interface declaration always introduces a named object type. |A type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.|
+|An interface can be named in an extends or implements clause. |Type alias for an object type literal cannot be named in an |extends or implements clause.|
+|Interfaces create a new name that is used everywhere. |Type aliases don\'t create a new name.|
+|An interface can have multiple merged declarations. |Type alias for an object type literal cannot have multiple merged declarations.|
+
+**Example:**
 
 ```ts
+/**
+ * Interface vs Type
+ */
 interface X {
     a: number
     b: string
@@ -209,13 +226,6 @@ type X = {
     b: string
 };
 ```
-
-|interface |type |
-|----------|-------|
-|An interface declaration always introduces a named object type. |	A type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.|
-|An interface can be named in an extends or implements clause.	 |Type alias for an object type literal cannot be named in an |extends or implements clause.|
-|Interfaces create a new name that is used everywhere.	         |Type aliases don't create a new name.|
-|An interface can have multiple merged declarations.	         |Type alias for an object type literal cannot have multiple merged declarations.|
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
