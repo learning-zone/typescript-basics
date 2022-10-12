@@ -269,6 +269,9 @@ Enums or enumerations are a TypeScipt data type that allow us to define a set of
 **Example:**
 
 ```ts
+/**
+ * Enum Datatype
+ */
 enum Gender {  
   Male,  
   Female  
