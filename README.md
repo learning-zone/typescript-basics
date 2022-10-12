@@ -1,4 +1,4 @@
-# Typescript Basics
+# Typescript Interview Questions
 
 *Click <img src="assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
@@ -7,7 +7,7 @@
 ## Q. What are the typescript features?
 
 **TypeScript** is a superset of JavaScript which primarily provides optional static typing, classes and interfaces.
-Typescript is an extension of ES6. 
+Typescript is an extension of ES6.
 
 * TypeScript includes Interfaces, Classes, Enums, Type Inference, Generics, access modifiers, Function etc. TypeScript makes typing a bit easier and a lot less explicit by the usage of type inference.
 
@@ -49,7 +49,8 @@ let school3 = getSchool("Rose Tree School", "US", "99501")
 
 ## Q. How to declare variable so that it can hold multiple values?
 
-**Tuples**:
+**Tuples:**
+
 It represents a heterogeneous collection of values. In other words, tuples enable storing multiple fields of different types. Tuples can also be passed as parameters to functions.
 
 **Syntax:**
@@ -61,7 +62,7 @@ let tuple_name = [value1, value2, value3,… value n]
 **Example:**
 
 ```ts
-let employee: [number, string] = [10, "Pradeep"]; //create a  tuple 
+let employee: [number, string] = [10, "Pradeep"]; // Create a tuple 
 console.log(employee[0]); // Output: 10
 console.log(employee[1]); // Output: Pradeep
 ```
