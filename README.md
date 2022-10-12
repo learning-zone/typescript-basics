@@ -233,7 +233,7 @@ type X = {
 
 ## Q. What is Rest parameters?
 
-The rest parameter is used to pass zero or more values to a function. It is declared by prefixing the three **dot** characters **('...')** before the parameter. It allows the functions to have a variable number of arguments without using the arguments object. 
+The rest parameter is used to pass zero or more values to a function. It is declared by prefixing the three **dot** characters **('...')** before the parameter. It allows the functions to have a variable number of arguments without using the arguments object.
 
 **Rules**:
 
@@ -241,7 +241,12 @@ The rest parameter is used to pass zero or more values to a function. It is decl
 * It must be an array type.
 * It must be a last parameter in the parameter list.
 
+**Example:**
+
 ```ts
+/**
+ * Rest parameters
+ */
 function sum(a: number, ...b: number[]): number {    
     let result = a;    
     for (var i = 0; i < b.length; i++) {    
