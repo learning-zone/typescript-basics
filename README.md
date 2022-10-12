@@ -9,7 +9,7 @@
 **TypeScript** is a superset of JavaScript which primarily provides optional static typing, classes and interfaces.
 Typescript is an extension of ES6.
 
-* TypeScript includes Interfaces, Classes, Enums, Type Inference, Generics, access modifiers, Function etc. TypeScript makes typing a bit easier and a lot less explicit by the usage of type inference.
+* TypeScript includes **Interfaces**, **Classes**, **Enums**, **Type Inference**, **Generics**, **access modifiers**, **Function** etc. TypeScript makes typing a bit easier and a lot less explicit by the usage of type inference.
 
 * TypeScript supports new ECMAScript standards and compiles them to (older) ECMAScript targets of your choosing. This means that you can use features of ES2015 and beyond, like modules, lambda functions, classes, the spread operator, destructuring etc.
 
