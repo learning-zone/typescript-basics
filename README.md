@@ -262,7 +262,7 @@ let result2 = sum(3, 5, 7, 9);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Explain Enum in TypeScript?
+## Q. Explain enum datatype in TypeScript?
 
 Enums or enumerations are a TypeScipt data type that allow us to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. It is a collection of related values that can be numeric or string values.
 
