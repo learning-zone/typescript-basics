@@ -123,21 +123,32 @@ new MyClass().myReadonlyProperty = 5; // error, readonly
 
 ## Q. What is getters and setters in TypeScript?
 
-TypeScript supports getters/setters as a way of intercepting accesses to a member of an object. This gives a way of having finer-grained control over how a member is accessed on each object.
+TypeScript supports getters/setters as a way of intercepting accesses to a member of an object. Getters enable us to bind a property to a function that is called when the property is accessed, whereas setters bind a property to a function that is called on attempts to set the property.
+
+**Example:**
 
 ```ts
+/**
+ * Getters and Setters
+ */
 class Employee {
-   
-    private _name: string;
+  private _name: string;
 
-    get Name() {
-        return this._name;
-    }
-    set Name(val) {
-        this._name = val;
-    }
+  get Name() {
+    return this._name;
+  }
+  set Name(val) {
+    this._name = val;
+  }
 }
+
+let employee = new Employee();
+employee.Name = "Pradeep";
+
+console.log("Name" + employee.Name); // Pradeep
 ```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/getter-and-setter-peq1nj?file=/src/index.ts)**
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
