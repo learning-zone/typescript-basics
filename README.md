@@ -249,7 +249,7 @@ The rest parameter is used to pass zero or more values to a function. It is decl
  */
 function sum(a: number, ...b: number[]): number {    
     let result = a;    
-    for (var i = 0; i < b.length; i++) {    
+    for (let i = 0; i < b.length; i++) {    
         result += b[i];    
     }    
     console.log(result);    
